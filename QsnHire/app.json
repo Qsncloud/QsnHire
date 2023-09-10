@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "QsnHire",
-    "slug": "QsnHire",
+    "name": "QSNhire",
+    "slug": "QSNhire",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splashscreen2-a.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2a0a2b"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,12 +19,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.qsnapp.QSNhire"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "166e4379-f00e-40ce-9c58-f86daad7f358"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

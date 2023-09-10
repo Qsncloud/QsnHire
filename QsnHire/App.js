@@ -1,20 +1,17 @@
-import * as React from 'react';
-import { WebView } from 'react-native-webview';
-import { StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
+import React, { useState, useEffect, useRef } from 'react';
+import { StyleSheet, StatusBar, ScrollView, View, ActivityIndicator, PanResponder } from 'react-native';
+import NetInfo from '@react-native-community/netinfo';
+import AllNavigation from './AllNavigation';
 
-export default function App() {
+const App = () => {
+ 
   return (
-    <WebView
-      style={styles.container}
-      source={{ uri: 'https://qsnhire.com' }}
-    />
+      <View style={{flex:1}}>
+      <StatusBar barStyle="auto" />
+        <AllNavigation />
+      </View>
+  
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    
-  },
-});
+export default App;
